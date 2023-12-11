@@ -21,6 +21,7 @@ public final class Constants {
 
   public static class SwerveDriveConstants {
 
+    // TODO: Set these constants to the correct physical values for our robot
     // Distance betweeen the left and right wheels on the robot
     public static final double kTrackWidth = Units.inchesToMeters(21);
 
@@ -78,6 +79,7 @@ public final class Constants {
   }
 
   public static class ModuleConstants {
+    // TODO: Measure these values on the actual robot
     public static final double kWheelDiameterMeters = Units.inchesToMeters(4);
     public static final double kDriveMotorGearRatio = 1 / 5.8462;
     public static final double kTurningMotorGearRatio = 1 / 18.0;
