@@ -81,8 +81,8 @@ public final class Constants {
   public static class ModuleConstants {
     // TODO: Measure these values on the actual robot
     public static final double kWheelDiameterMeters = Units.inchesToMeters(4);
-    public static final double kDriveMotorGearRatio = 1 / 5.8462;
-    public static final double kTurningMotorGearRatio = 1 / 18.0;
+    public static final double kDriveMotorGearRatio = 1 / 6.75;
+    public static final double kTurningMotorGearRatio = 1 / (double)(150.0/7.0);
     public static final double kDriveEncoderRot2Meter = kDriveMotorGearRatio * Math.PI * kWheelDiameterMeters;
     public static final double kTurningEncoderRot2Rad = kDriveMotorGearRatio * 2 * Math.PI;
     public static final double kDriveEncoderRPM2MeterPerSec = kDriveEncoderRot2Meter / 60;
