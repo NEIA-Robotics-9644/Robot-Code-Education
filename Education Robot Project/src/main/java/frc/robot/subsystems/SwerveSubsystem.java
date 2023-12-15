@@ -65,8 +65,11 @@ public class SwerveSubsystem extends SubsystemBase {
 
     private final Pigeon2  gyro = new Pigeon2(SwerveDriveConstants.kPigeonIMUCanId);
 
+    private int timer;
+
     public SwerveSubsystem() {
         //Put the call to reset on another thread and wait for 1 sec to let the gyro recalibrate
+        timer = 0;
         new Thread(() -> {
             try {
                 Thread.sleep(1000);
@@ -91,7 +94,18 @@ public class SwerveSubsystem extends SubsystemBase {
 
     @Override
     public void periodic() {
-        SmartDashboard.putNumber("Robot Heading", getHeading());
+        
+
+        if (timer >= 10) {
+            SmartDashboard.putNumber("Robot Heading", getHeading());
+            SmartDashboard.putNumber("Front Left Abs Encoder", frontLeft.getTurningPosition());
+            SmartDashboard.putNumber("Front Right Abs Encoder", frontRight.getTurningPosition());
+            SmartDashboard.putNumber("Back Left Abs Encoder", backLeft.getTurningPosition());
+            SmartDashboard.putNumber("Back Right Abs Encoder", backRight.getTurningPosition());
+            timer = 0;
+        } else {
+            timer++;
+        }
     }
 
     public void stopModules() {

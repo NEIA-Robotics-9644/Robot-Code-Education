@@ -38,7 +38,9 @@ public class SwerveJoystickCmd extends CommandBase {
         // 1. Get the joystick values
         double xSpeed = xSpdFunction.get();
         double ySpeed = ySpdFunction.get();
-        double turningSpeed = turningSpdFunction.get();
+
+        // Invert turning by default
+        double turningSpeed = -turningSpdFunction.get();
 
         // 2. Apply a deadband to the joystick values
         xSpeed = Math.abs(xSpeed) > OIConstants.kDeadband ? xSpeed : 0;
