@@ -7,6 +7,7 @@ package frc.robot;
 import edu.wpi.first.math.geometry.Translation2d;
 import edu.wpi.first.math.kinematics.SwerveDriveKinematics;
 import edu.wpi.first.math.util.Units;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 /**
  * The Constants class provides a convenient place for teams to hold robot-wide numerical or boolean
@@ -21,7 +22,6 @@ public final class Constants {
 
   public static class SwerveDriveConstants {
 
-    // TODO: Set these constants to the correct physical values for our robot
     // Distance betweeen the left and right wheels on the robot
     public static final double kTrackWidth = Units.inchesToMeters(26.5);
 
@@ -83,7 +83,6 @@ public final class Constants {
   }
 
   public static class ModuleConstants {
-    // TODO: Measure these values on the actual robot
     public static final double kWheelDiameterMeters = Units.inchesToMeters(4);
     public static final double kDriveMotorGearRatio = 1 / 6.75;
     public static final double kTurningMotorGearRatio = 1 / (double)(150.0/7.0);
@@ -94,6 +93,19 @@ public final class Constants {
     public static final double kPTurning = 0.6;
     public static final double kITurning = 0.003;
     public static final double kDTurning = 0.001;
+
+
+    public static double kPTurning() {
+      return SmartDashboard.getNumber("Swerve Module kPTurning", 0.0);
+    }
+
+    public static double kITurning() {
+      return SmartDashboard.getNumber("Swerve Module kITurning", 0.0);
+    }
+
+    public static double kDTurning() {
+      return SmartDashboard.getNumber("Swerve Module kDTurning", 0.0);
+    }
   }
 
   public static class OIConstants {

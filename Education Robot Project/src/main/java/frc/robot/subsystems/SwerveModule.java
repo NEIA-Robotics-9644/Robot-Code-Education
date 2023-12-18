@@ -98,6 +98,7 @@ public class SwerveModule {
         driveMotor.set(state.speedMetersPerSecond / SwerveDriveConstants.kPhysicalMaxSpeedMetersPerSecond);
         turningMotor.set(turningPidController.calculate(getTurningPosition(), state.angle.getRadians()));
         SmartDashboard.putString("Swerve " + name + " state", state.toString());
+        
 
         if (!RobotBase.isReal()) {
             Simulation.addData(this, "Swerve " + name + " Drive Velocity", state.speedMetersPerSecond);
