@@ -120,5 +120,6 @@ public final class Constants {
 
     public static final int kFieldOrientedButtonIdx = 1;
     public static final int kZeroHeadingButtonIdx = 2;
+    public static final int kTurn360ButtonIdx = 3;
   }
 }

@@ -17,7 +17,7 @@ import frc.robot.subsystems.SwerveSubsystem;
  * subsystems, commands, and trigger mappings) should be declared here.
  */
 public class RobotContainer {
-  private final Joystick driverJoystick = new Joystick(OIConstants.kDriverControllerPort);
+  private final Joystick driverJoystick = new Joystick(OIConstants.kDriverControllerPort); //whole controller
   private final SwerveSubsystem swerveSubsystem = new SwerveSubsystem();
 
   public RobotContainer() {
@@ -34,6 +34,8 @@ public class RobotContainer {
   private void configureButtonBindings() {
     new JoystickButton(driverJoystick, OIConstants.kZeroHeadingButtonIdx)
         .onTrue(() -> swerveSubsystem.zeroHeading());
+    new JoystickButton(driverJoystick, OIConstants.kTurn360ButtonIdx)
+        .onTrue(() -> swerveSubsystem.turn360());
   }
 
   public Command getAutonomousCommand() {

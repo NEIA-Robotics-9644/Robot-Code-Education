@@ -84,6 +84,30 @@ public class SwerveSubsystem extends SubsystemBase {
         return null;
     }
 
+    public Set<Subsystem> turn360() {
+        private boolean loopVar = True
+        private double gyroAngle = gyro.getAngle();
+        while (loopVar == True) {
+            frontLeft.setTurningVelocity(1);
+            frontRight.setTurningVelocity(1);
+            backLeft.setTurningVelocity(1);
+            backRight.setTurningVelocity(1);
+            if (gyro.getAngle() != gyroAngle) {
+                frontLeft.setTurningVelocity(1);
+                frontRight.setTurningVelocity(1);
+                backLeft.setTurningVelocity(1);
+                backRight.setTurningVelocity(1);
+            }
+            else {
+                frontLeft.stop();
+                frontRight.stop();
+                backLeft.stop();
+                backRight.stop();
+                loopVar = False
+            }
+        }
+    }
+
     public double getHeading() {
         return Math.IEEEremainder(gyro.getAngle(), 360);
     }
@@ -122,6 +146,5 @@ public class SwerveSubsystem extends SubsystemBase {
         frontRight.setDesiredState(desiredStates[1]);
         backLeft.setDesiredState(desiredStates[2]);
         backRight.setDesiredState(desiredStates[3]);
-
     }
 };

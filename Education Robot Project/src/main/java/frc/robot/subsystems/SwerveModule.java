@@ -69,6 +69,12 @@ public class SwerveModule {
     }
 
     public double getTurningVelocity() {
+        turningEncoder.setVelocity();
+        return turningEncoder.getVelocity();
+    }
+
+    public double setTurningVelocity(double turningVelocity) {
+        turningMotor.set(turningVelocity);
         return turningEncoder.getVelocity();
     }
 
