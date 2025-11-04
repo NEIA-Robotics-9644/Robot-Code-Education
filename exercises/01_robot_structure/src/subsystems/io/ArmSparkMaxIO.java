@@ -9,10 +9,6 @@ public class ArmSparkMaxIO implements ArmMotorIO {
         // TODO: print "ArmSparkMaxIO initialized."GOOD
     }
 
-    @Override
-    public void moveArm(double speed){
-        System.out.print("Arm motor (SparkMax) moving...");
-    }
-        // TODO: print "Arm motor (SparkMax) moving..."GOD
+    
     //}
 }

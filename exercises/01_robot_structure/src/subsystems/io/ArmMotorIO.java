@@ -4,7 +4,7 @@ package subsystems.io;
 public interface ArmMotorIO {
     
 
-    void moveArm(double speed);
+    default void moveArm(double speed) {};
 
     // TODO: define a method signature called moveArm() that returns nothing GOOD
 }
