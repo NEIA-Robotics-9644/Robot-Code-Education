@@ -2,6 +2,8 @@
 // In a real robot, this is where commands and button bindings would be set up.
 import subsystems.ArmSubsystem;
 
+
+
 public class RobotContainer {
     // TODO: declare a private ArmSubsystem variable
 
@@ -11,6 +13,10 @@ public class RobotContainer {
     }
 
     public void initialize() {
+        
+        System.out.println("Initializing subsystems..");
+        
+
         // TODO: print "Initializing subsystems..."
         // TODO: call test() on ArmSubsystem
     }
