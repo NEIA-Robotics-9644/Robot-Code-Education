@@ -8,8 +8,8 @@ public class Main {
             robot.start();
 
 
-        // TODO: print "=== Starting Robot Simulation ==="
-        // TODO: create a new Robot object
-        // TODO: call a method on the Robot to start it
+        // TODO: print "=== Starting Robot Simulation ===" GOOD
+        // TODO: create a new Robot object GOOD
+        // TODO: call a method on the Robot to start it GOOD
     }
 }

@@ -9,21 +9,28 @@ import subsystems.io.ArmSparkMaxIO;
 
 public class ArmSubsystem {
 
-    
+    private final ArmMotorIO ArmMotorIO ;
 
-    // TODO: declare a private ArmMotorIO variable
+
+    // TODO: declare a private ArmMotorIO variable GOOD
 
     public ArmSubsystem() {
+
+        ArmMotorIO = new ArmSparkMaxIO();
         System.out.println("Constructing ArmSubsystem");
 
 
 
-        // TODO: print "Constructing ArmSubsystem..."
-        // TODO: assign ArmMotorIO variable to a new ArmSparkMaxIO
+        // TODO: print "Constructing ArmSubsystem..." GOOD
+        // TODO: assign ArmMotorIO variable to a new ArmSparkMaxIO GOOD
     }
 
     public void test() {
-        // TODO: print "Testing ArmSubsystem..."
-        // TODO: call a method on the ArmMotorIO (e.g., moveArm())
+
+        System.out.println("Testing ArmSubsystem...");
+        ArmMotorIO.moveArm(0);
+
+        // TODO: print "Testing ArmSubsystem..." GOOD
+        // TODO: call a method on the ArmMotorIO (e.g., moveArm()) GOOD
     }
 }
