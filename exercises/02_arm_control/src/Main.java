@@ -18,10 +18,23 @@ public class Main {
         Scanner inputScanner = new Scanner(System.in);
 
         for (int i = 0; i < 5; i++){
-            String userinput = inputScanner.nextLine();
+            String userinput = inputScanner.nextLine(); 
+
+            switch(userinput){
+                case "lift arm" -> System.out.println("");
+                case "lower arm" -> System.out.println("");
+                case "stop arm" -> System.out.println("");
+                case "Shutdown" -> System.out.println("");
+
+            }
+
+
+
         }
+        inputScanner.close();
         Robot robot = new Robot();
         robot.init();
+        
 
 
 

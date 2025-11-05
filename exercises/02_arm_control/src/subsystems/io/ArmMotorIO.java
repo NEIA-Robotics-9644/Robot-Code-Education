@@ -11,5 +11,9 @@
 package subsystems.io;
 
 public interface ArmMotorIO {
+
+    void setpower(double power);
+
+    
     // TODO: define method signature
 }

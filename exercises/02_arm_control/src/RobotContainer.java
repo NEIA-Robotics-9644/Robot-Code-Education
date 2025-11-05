@@ -15,12 +15,27 @@ import subsystems.io.ArmMockIO;
 
 public class RobotContainer {
 
-    private final ArmSubsystem armSubsystem;
+    private final ArmSubsystem arm;
 
     // TODO: declare ArmSubsystem field
 
     public RobotContainer() {
+
+        System.out.println("Setting up RobotContainer");
+        arm = new ArmSubsystem(new ArmMockIO());
+        
+       
+
+
         // TODO: initialize ArmSubsystem with new ArmMockIO()
+    }
+
+    public void initialize(){
+        System.out.println("Intailzing subsystem...");
+    }
+
+    public ArmSubsystem getArmSubsystem(){
+        return arm;
     }
 
     // TODO: create getArmSubsystem() method
