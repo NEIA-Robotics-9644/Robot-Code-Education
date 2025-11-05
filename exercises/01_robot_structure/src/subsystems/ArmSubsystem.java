@@ -5,15 +5,24 @@ import subsystems.io.ArmSparkMaxIO;
 
 // Represents the robot’s arm mechanism.
 public class ArmSubsystem {
-    // TODO: declare a private ArmMotorIO variable
+
+        private final ArmMotorIO ArmMotorIO; 
+
 
     public ArmSubsystem() {
-        // TODO: print "Constructing ArmSubsystem..."
-        // TODO: assign ArmMotorIO variable to a new ArmSparkMaxIO
+
+        System.out.println("Constructing ArmSubsystem...");
+        ArmMotorIO  = new ArmSparkMaxIO();
+
+        
     }
 
     public void test() {
-        // TODO: print "Testing ArmSubsystem..."
-        // TODO: call a method on the ArmMotorIO (e.g., moveArm())
+
+
+        System.out.println("Testing ArmSubsystem...");
+        ArmMotorIO.moveArm();
+
+        
     }
 }

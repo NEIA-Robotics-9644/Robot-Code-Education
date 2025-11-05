@@ -14,6 +14,9 @@ import subsystems.ArmSubsystem;
 import subsystems.io.ArmMockIO;
 
 public class RobotContainer {
+
+    private final ArmSubsystem armSubsystem;
+
     // TODO: declare ArmSubsystem field
 
     public RobotContainer() {
