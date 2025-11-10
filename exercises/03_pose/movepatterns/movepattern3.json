@@ -1,0 +1,14 @@
+{
+  "steps": [
+    {"action": "forward", "duration_s": 1.9},
+    {"action": "rotate_right", "duration_s": 0.6},
+    {"action": "forward", "duration_s": 1.2},
+    {"action": "rotate_left", "duration_s": 1.2},
+    {"action": "forward", "duration_s": 0.5},
+    {"action": "rotate_right", "duration_s": 0.2},
+    {"action": "forward", "duration_s": 1.3},
+    {"action": "rotate_left", "duration_s": 1.0},
+    {"action": "forward", "duration_s": 1.4},
+    {"action": "rotate_right", "duration_s": 0.8}
+  ]
+}

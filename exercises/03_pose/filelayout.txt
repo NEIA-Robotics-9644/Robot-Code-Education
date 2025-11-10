@@ -1,0 +1,8 @@
+src/
+├─ Main.java
+├─ Robot.java
+├─ RobotContainer.java
+├─ subsystems/
+│   └─ PoseSubsystem.java
+└─ utils/
+    └─ MovementStep.java
