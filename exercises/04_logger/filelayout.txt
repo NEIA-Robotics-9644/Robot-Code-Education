@@ -1,0 +1,11 @@
+src/
+├─ Main.java
+├─ Robot.java
+├─ RobotContainer.java
+├─ subsystems/
+│  └─ PoseSubsystem.java
+│  └─ io/
+│      ├─ OdometryMotorIO.java
+│      └─ OdometryMotorIOSim.java
+└─ utils/
+   └─ MovementStep.java
