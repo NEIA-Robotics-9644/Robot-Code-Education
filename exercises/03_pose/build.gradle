@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+subprojects {
+    apply plugin: 'java'
+    repositories {
+    mavenCentral()
+    }
+
+    dependencies{
+        implementation 'org.json:json:20250107'
+    }
+
+    java {
+        toolchain{
+            languageVersion = JavaLanguageVersion.of(17)
+        }
+    }
+}
