@@ -1,21 +1,15 @@
 // The Robot class represents your robot.
 // It owns a RobotContainer that creates all subsystems.
 public class Robot {
-
-    private final RobotContainer RobotContainer;
-    
+    // TODO: declare a RobotContainer variable
 
     public Robot() {
-        System.out.println("Constructing Robot...");
-        RobotContainer = new RobotContainer();
-
-       
+        // TODO: print "Constructing Robot..."
+        // TODO: initialize the RobotContainer
     }
 
     public void start() {
-
-        System.out.println("Robot started.");
-        RobotContainer.initialize();
-        
+        // TODO: print "Robot started."
+        // TODO: call initialize() on the RobotContainer
     }
 }

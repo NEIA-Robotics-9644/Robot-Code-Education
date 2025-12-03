@@ -15,35 +15,7 @@ package subsystems;
 
 import subsystems.io.ArmMotorIO;
 
-
 public class ArmSubsystem {
-
-    private final ArmMotorIO io;
-
-    public ArmSubsystem(ArmMotorIO io){
-        System.out.println("ArmSubsystem made");
-        this.io = io;
-    }
-
-    public void liftArm() {
-        System.out.println("ARM IS LIFTED UP");
-        io.setpower(1);
-        
-    }
-    public void lowerArm() {
-        System.out.println("ARM IS Lowerd ");
-        io.setpower(-1);
-    }
-    public void stopArm() {
-        System.out.println("ARM STOP");
-        io.setpower(0);
-    }
-    public void shutdown() {
-        System.out.println("SHUTING DOWN");
-        io.setpower(0);
-    }
-
-    
     // TODO: add private ArmMotorIO field
 
     // TODO: constructor that accepts ArmMotorIO

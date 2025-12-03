@@ -12,14 +12,6 @@
 
 package subsystems.io;
 
-
 public class ArmMockIO implements ArmMotorIO {
-        
-    @Override
-    public void setpower(double power) {
-        // TODO Auto-generated method stub
-        
-    }
-
     // TODO: implement setPower(double power)
 }

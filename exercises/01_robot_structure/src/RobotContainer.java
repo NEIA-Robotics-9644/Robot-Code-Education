@@ -3,24 +3,15 @@
 import subsystems.ArmSubsystem;
 
 public class RobotContainer {
-
-    private final ArmSubsystem ArmSubsystem;
-
+    // TODO: declare a private ArmSubsystem variable
 
     public RobotContainer() {
-
-        System.out.println("Setting up RobotContainer...");
-        
-        ArmSubsystem = new ArmSubsystem();
-
-        
+        // TODO: print "Setting up RobotContainer..."
+        // TODO: create an instance of ArmSubsystem
     }
 
     public void initialize() {
-
-        System.out.println("Initializing subsystems...");
-        ArmSubsystem.test();
-
-        
+        // TODO: print "Initializing subsystems..."
+        // TODO: call test() on ArmSubsystem
     }
 }
