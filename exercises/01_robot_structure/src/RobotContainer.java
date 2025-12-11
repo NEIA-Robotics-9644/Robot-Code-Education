@@ -17,7 +17,7 @@ public class RobotContainer {
     }
 
     public void initialize() {
-        Systme.out.println("Initializing subsystems...");
+        System.out.println("Initializing subsystems...");
         armSubsystem.test();
 
         //print "Initializing subsystems..."

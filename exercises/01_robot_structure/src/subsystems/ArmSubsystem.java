@@ -19,7 +19,7 @@ public class ArmSubsystem {
 
     public void test() {
         System.out.println("Testing ArmSubsystem...");
-        armMotorIO.moveArm();
+        aMotorIO.moveArm();
         
 
         // TODO: print "Testing ArmSubsystem..."

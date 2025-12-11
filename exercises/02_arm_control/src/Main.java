@@ -13,6 +13,9 @@
 
 public class Main {
     public static void main(String[] args) {
+        Robot robot = new robot();
+        robot.init();
+
         // TODO: create and initialize the robot
 
         // TODO: set up Scanner (look up this object type) and command loop
